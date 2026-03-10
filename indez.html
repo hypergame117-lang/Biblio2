@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Biblioteca de Registros del Castillo</title>
+
+<style>
+
+body{
+background:#1b1b1b;
+color:white;
+font-family:Georgia, serif;
+text-align:center;
+margin:0;
+padding:0;
+}
+
+h1{
+margin-top:30px;
+}
+
+.biblioteca{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+.libro{
+width:140px;
+cursor:pointer;
+}
+
+.libro img{
+width:140px;
+height:200px;
+object-fit:cover;
+border-radius:6px;
+box-shadow:0 6px 15px rgba(0,0,0,0.7);
+transition:transform 0.2s;
+}
+
+.libro img:hover{
+transform:scale(1.1);
+}
+
+.libro p{
+margin-top:8px;
+font-size:14px;
+}
+
+.historia{
+display:none;
+max-width:700px;
+margin:40px auto;
+background:#2a2a2a;
+padding:25px;
+border-radius:10px;
+text-align:left;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>📚 Registros de Desapariciones</h1>
+<p>Selecciona un libro</p>
+
+<div class="biblioteca">
+
+<div class="Criaturas ancestrales" onclick="abrirHistoria('h1')">
+<img src="portada1.jpg">
+<p>Hace 7 años</p>
+</div>
+
+<div class="Criaturas mágicas" onclick="abrirHistoria('h2')">
+<img src="portada2.jpg">
+<p>Hace 6 años</p>
+</div>
+
+<div class="Herbología básica" onclick="abrirHistoria('h3')">
+<img src="portada3.jpg">
+<p>Hace 6 años</p>
+</div>
+
+<div class="Rompemaldiciones" onclick="abrirHistoria('h4')">
+<img src="portada4.jpg">
+<p>Hace 5 años</p>
+</div>
+
+<div class="Sucesos mágicos" onclick="abrirHistoria('h5')">
+<img src="portada5.jpg">
+<p>Clausura</p>
+</div>
+
+<div class="Sucesos Mágicos" onclick="abrirHistoria('h6')">
+<img src="portada6.jpg">
+<p>Hace 4 años</p>
+</div>
+
+<div class="Historias de Hogmeade" onclick="abrirHistoria('h7')">
+<img src="portada7.jpg">
+<p>Hace 4 años</p>
+</div>
+
+<div class="Tiempo y sus parámetros" onclick="abrirHistoria('h8')">
+<img src="portada8.jpg">
+<p>Hace 3 años</p>
+</div>
+
+<div class="Criaturas acúaticas" onclick="abrirHistoria('h9')">
+<img src="portada9.jpg">
+<p>Hace 3 años</p>
+</div>
+
+<div class="Herbología avanzada" onclick="abrirHistoria('h10')">
+<img src="portada10.jpg">
+<p>Hace 2 años</p>
+</div>
+
+<div class="Mancias" onclick="abrirHistoria('h11')">
+<img src="portada11.jpg">
+<p>Hace 2 años</p>
+</div>
+
+</div>
+
+
+<div id="h1" class="historia">
+<h2>Alistair Crowley — Hace 7 años</h2>
+<p>
+Alistair fue visto caminando hacia el Bosque Prohibido al anochecer.
+Llevaba un libro de criaturas mágicas.
+Tres días después el libro apareció junto al lago.
+Alistair nunca regresó.
+</p>
+</div>
+
+
+<div id="h2" class="historia">
+<h2>Tomas Whitrow— Hace 6 años</h2>
+<p>
+Mabel investigaba antiguos pasadizos del castillo.
+Dijo haber encontrado uno detrás de un tapiz.
+Entró para explorarlo.
+Cuando los profesores revisaron el lugar, el muro estaba completamente sólido.
+Tomas nadaba en el lago cercano al castillo.
+Saltó desde el embarcadero una tarde de verano.
+Nunca volvió a salir del agua.
+Algunos estudiantes dicen ver una silueta nadando en noches de luna llena.
+</p>
+</div>
+
+
+<div id="h3" class="historia">
+<h2>Mabel Fawley — Hace 6 años</h2>
+<p>
+Mabel investigaba antiguos pasadizos del castillo.
+Dijo haber encontrado uno detrás de un tapiz.
+Entró para explorarlo.
+Cuando los profesores revisaron el lugar, el muro estaba completamente sólido.
+
+</p>
+</div>
+
+
+<div id="h4" class="historia">
+<h2>Armand Vale — Hace 5 años</h2>
+<p>
+Armand era un profesor invitado especializado en maldiciones antiguas.
+Tras su última clase regresó a sus aposentos.
+En su escritorio encontraron un pergamino con una frase escrita deprisa:
+“No está sellado”.
+</p>
+</div>
+
+
+<div id="h5" class="historia">
+<h2>Clausura del Castillo — Hace 5 años</h2>
+<p>
+Tras varios incidentes inexplicables, el castillo fue evacuado
+y cerrado por orden del Ministerio.
+Nadie volvió a vivir dentro desde entonces.
+</p>
+</div>
+
+
+<div id="h6" class="historia">
+<h2>Rowan Pike — Hace 4 años</h2>
+<p>
+Rowan afirmó ver luces en las torres del castillo vacío.
+Una noche subió a la colina para demostrarlo.
+A la mañana siguiente solo encontraron su hacha.
+</p>
+</div>
+
+
+<div id="h7" class="historia">
+<h2>Martha Bell — Hace 4 años</h2>
+<p>
+Martha dijo haber servido bebida a un viajero empapado que afirmaba venir del castillo.
+El castillo llevaba meses cerrado.
+Esa misma noche Martha desapareció.
+</p>
+</div>
+
+
+<div id="h8" class="historia">
+<h2>Garrick Dunwell — Hace 3 años</h2>
+<p>
+Todos los relojes de la aldea se detenían a las 3:17 de la madrugada.
+Garrick subió a la colina para averiguar por qué.
+Los relojes volvieron a funcionar.
+Garrick no.
+</p>
+</div>
+
+
+<div id="h9" class="historia">
+<h2>Pella Grint — Hace 3 años</h2>
+<p>
+Pella decía escuchar voces que venían del castillo vacío.
+Una madrugada siguió las voces.
+Sus huellas desaparecieron en la nieve.
+</p>
+</div>
+
+
+<div id="h10" class="historia">
+<h2>Miren Vale — Hace 2 años</h2>
+<p>
+Miren llegó a investigar las desapariciones.
+Pasó semanas entrevistando a aldeanos.
+La última frase de su cuaderno decía:
+“Todo empezó dentro del castillo”.
+</p>
+</div>
+
+
+<div id="h11" class="historia">
+<h2>Elia Thorn — Hace 2 años</h2>
+<p>
+Elia investigaba el castillo abandonado.
+Fue vista caminando hacia la puerta principal.
+Su varita fue encontrada en el suelo frente a la entrada.
+Aún estaba caliente.
+</p>
+</div>
+
+
+<script>
+
+function abrirHistoria(id){
+
+let historias = document.querySelectorAll(".historia");
+
+historias.forEach(h=>{
+h.style.display="none";
+});
+
+document.getElementById(id).style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
