@@ -83,19 +83,27 @@ margin-top:8px;
 font-size:12px;
 }
 .marca{
+display:none;
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
 background:#3a2a1a;
 color:#f5e6c8;
-padding:8px 12px;
+padding:10px 15px;
 border-left:4px solid #caa45a;
-margin-bottom:15px;
+border-radius:5px;
 font-style:italic;
-border-radius:4px;
+z-index:1000;
+}
 }
 </style>
 </head>
 
 <body>
-
+<div id="marca" class="marca">
+/do Esta página del libro estaría marcada
+</div>
 <h1>📚 Registros de Desapariciones</h1>
 <p>Selecciona un libro</p>
 
@@ -290,7 +298,25 @@ let historia = document.getElementById(id);
 historia.classList.add("abierto");
 
 }
+function abrirHistoria(id){
 
+let historias = document.querySelectorAll(".historia");
+
+historias.forEach(h=>{
+h.classList.remove("abierto");
+});
+
+let historia = document.getElementById(id);
+historia.classList.add("abierto");
+
+let marca = document.getElementById("marca");
+marca.style.display = "block";
+
+setTimeout(function(){
+marca.style.display = "none";
+}, 3000);
+
+}
 </script>
 
 </body>
