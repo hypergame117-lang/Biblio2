@@ -5,6 +5,25 @@
 <title>Biblioteca de Registros del Castillo</title>
 
 <style>
+  .historia{
+display:none;
+max-width:700px;
+margin:40px auto;
+background:#2a2a2a;
+padding:25px;
+border-radius:10px;
+text-align:left;
+transform:scale(0.8);
+opacity:0;
+transition:all 0.4s ease;
+}
+<style>
+
+.historia.abierto{
+display:block;
+transform:scale(1);
+opacity:1;
+}
 
 body{
 background:#1b1b1b;
@@ -259,6 +278,19 @@ document.getElementById(id).style.display="block";
 
 }
 
+</script>
+  function abrirHistoria(id){
+
+let historias = document.querySelectorAll(".historia");
+
+historias.forEach(h=>{
+h.classList.remove("abierto");
+});
+
+let historia = document.getElementById(id);
+historia.classList.add("abierto");
+
+}
 </script>
 
 </body>
